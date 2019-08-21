@@ -1,0 +1,142 @@
+* {
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 { /*-type selector--*/
+    color: #338822; 
+}
+
+.classPara { /*-class selector--*/
+    background-color: aquamarine;
+    width: auto;
+    display: inline-block;
+}
+
+#idPara { /*-id selector--*/
+    font-size: 40px;
+    background-color: #457839;
+}
+
+div > p { /*-child selector--*/
+    color: tomato;
+}
+
+span a {  /*-decendent selector--*/
+    text-decoration: none;
+    font-size: 30px;
+    text-transform: capitalize;
+    color: maroon;
+
+}
+
+a + p { /*-adjacent selector--*/
+    color: silver !important;
+}
+
+.general > a~p { /*-general selector--*/
+    background-color: yellowgreen;
+}
+
+.pseudo + p::first-letter {
+    text-transform: capitalize;
+    font-size: 30px;
+}
+
+.pseudo::first-line {
+    color:blue;
+}
+
+.pseudo ~ a {
+    display: block;
+    text-decoration: none;
+}
+
+.pseudo ~ a:link {
+    color:green;
+    font-size: 35px;
+}
+
+.pseudo ~ a:visited {
+    color:green;
+}
+
+.pseudo ~ a:hover {
+    text-transform: uppercase;
+}
+
+.pseudo ~ a:active {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pseudo ~ a:focus {
+    text-decoration: underline;
+}
+
+.inheritmain {
+    width:600px;
+    height:600px;
+    background-color: aquamarine;
+}
+
+.inheritchild {
+    height: inherit;
+    width:400px;
+    background-color: black;
+    color: white;
+}
+
+.color1, .color2, .color3, .color4 {
+    width:200px;
+    height: 200px;
+    
+}
+
+.color1 {
+    background-color: #338822;
+}
+
+.color2 {
+    background-color:pink;
+}
+
+.color3 {
+    background-color: rgb(23,225,50);
+}
+
+.color4 {
+    background-color: rgba(23,225,50, 0.5);
+}
+
+.shadowbox {
+    width: 600px;
+    height: 250px;
+    background-color: azure;
+    box-shadow: 1px 1px 5px #000;
+}
+
+.shadowtext{
+    font-size:30px;
+
+    text-shadow: 2px 1px 10px #000;
+}
+
+.padmar {
+    width:600px;
+    height: 600px;
+    background-color: aqua;
+}
+
+.padd {
+    width:200px;
+    height: 200px;
+    background-color: yellowgreen;
+    padding: 40px;
+}
+
+.marg {
+    width:200px;
+    height: 200px;
+    background-color: orangered;
+    margin: 40px;
+}
